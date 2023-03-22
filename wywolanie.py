@@ -1,0 +1,18 @@
+import klasawektor
+from klasawektor import Vector
+wektor1=Vector([1,2,1],3)
+wektor2=Vector([1,1,2],3)
+wektor3=Vector([1,1],2)
+print("Wektory początkowe:" ,"\n",wektor1,wektor2,wektor3)
+print("Losowa generacja i wczytywanie z tablicy podanej jako argument:","\n",wektor1.losowa_generacja(),wektor2.wczytywanie([1,2,3]))
+print("Dodawanie:","\n",wektor1+wektor2)
+print("Dodawanie z błędem:","\n",wektor1+wektor3)
+print("Odejmowanie:","\n",wektor1-wektor2)
+print("Odejmowanie z błędem:","\n", wektor1-wektor3)
+print("Mnożenie przez skalar","\n",wektor3.mnozenieprzezskalar(5))
+print("Długość wektora1:","\n",wektor1.dlugosc())
+print("Suma elementów wektora1:","\n",wektor1.suma_elementow())
+print("Mnożenie skalarne wektora1 i 2:","\n",wektor1*wektor2)
+print("Element na drugiej pozycji wektora1:","\n",wektor1[2])
+print("Reprezentacja tekstowa wektora1:","\n",wektor1)
+print("Czy 5 jest elemntem wektora1","\n",5 in wektor1)
